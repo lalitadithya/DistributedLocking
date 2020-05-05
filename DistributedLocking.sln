@@ -13,6 +13,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hazelcast Cluster", "Hazelc
 		Hazelcast Cluster\deployment.yaml = Hazelcast Cluster\deployment.yaml
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deployment", "deployment", "{9C16F64E-F20C-43EC-A441-847B50276743}"
+	ProjectSection(SolutionItems) = preProject
+		deployment\istio-gateway.yaml = deployment\istio-gateway.yaml
+		deployment\rbac.yaml = deployment\rbac.yaml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
