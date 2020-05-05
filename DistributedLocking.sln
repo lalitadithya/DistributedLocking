@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{085BD674-9041-4E94-BCF4-3472ABBE119C}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{9A3DA900-7584-4FE2-9CE2-C3AC7D6692EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hazelcast Cluster", "Hazelcast Cluster", "{7AD6EF52-75C7-437B-87E1-8D89A00452D5}"
+	ProjectSection(SolutionItems) = preProject
+		Hazelcast Cluster\deployment.yaml = Hazelcast Cluster\deployment.yaml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A3DA900-7584-4FE2-9CE2-C3AC7D6692EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A3DA900-7584-4FE2-9CE2-C3AC7D6692EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A3DA900-7584-4FE2-9CE2-C3AC7D6692EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A3DA900-7584-4FE2-9CE2-C3AC7D6692EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A14943B3-2924-4964-B8E9-72DCC02AF4B3}
+	EndGlobalSection
+EndGlobal
