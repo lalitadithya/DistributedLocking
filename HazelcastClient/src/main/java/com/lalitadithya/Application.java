@@ -1,6 +1,6 @@
 package com.lalitadithya;
 
-import com.hazelcast.client.config.ClientConfig;
+import com.hazelcast.config.Config;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -15,10 +15,12 @@ public class Application {
     }
 
     @Bean
-    public ClientConfig config() {
-        ClientConfig config = new ClientConfig();
-        config.getNetworkConfig().getKubernetesConfig().setEnabled(true);
-        config.getNetworkConfig().getKubernetesConfig().setProperty("service-name","hazelcast-cluster");
+    public Config config() {
+        Config config = new Config();
+        config.getNetworkConfig().setPortAutoIncrement(true);
+        config.getCPSubsystemConfig().setCPMemberCount(3);
+        //config.getNetworkConfig().getKubernetesConfig().setEnabled(true);
+        //config.getNetworkConfig().getKubernetesConfig().setProperty("service-name","hazelcast-cluster");
         return config;
     }
 }
